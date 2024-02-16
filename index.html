@@ -7,12 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Hello</title>
 
+    <!-- style -->
+    <style>
+
+        img {
+            width: 500px;
+            height: 250px;
+
+            object-fit: cover;
+        }
+
+    </style>
+
 </head>
 
 <body>
 
     <div id="app">
         <h1>{{message}}</h1>
+
+        <img :src=url alt="">
     </div>
     
     
@@ -26,7 +40,8 @@
             data() {
                 return {
 
-                    message: "Hello Vue!",                  
+                    message: "Hello Vue!",      
+                    url : "https://static.platzi.com/media/blog/vuejs-4163d340-e1b8-4554-b42a-43d31e9c5b21.jpg",            
                     
                 }
             }
