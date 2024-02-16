@@ -17,6 +17,10 @@
             object-fit: cover;
         }
 
+        input{
+            width: 500px;
+        }
+
     </style>
 
 </head>
@@ -27,6 +31,8 @@
         <h1>{{message}}</h1>
 
         <img :src=url alt="">
+
+        <input type="text" v-model="url">
     </div>
     
     
